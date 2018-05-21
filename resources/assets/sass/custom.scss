@@ -1,0 +1,220 @@
+.vertical-alignment-helper {
+     display:table;
+     height: 100%;
+     width: 100%;
+     pointer-events:none;
+}
+ .vertical-align-center {
+    /* To center vertically */
+     display: table-cell;
+     vertical-align: middle;
+     pointer-events:none;
+}
+ .modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+     width:inherit;
+     max-width:inherit;
+    /* For Bootstrap 4 - to avoid the modal window stretching full width */
+     height:inherit;
+    /* To center horizontally */
+     margin: 0 auto;
+     pointer-events:all;
+}
+ .modal-close-button {
+     color: #fff;
+     background-color: #17a2b894;
+     border-top-color: #17a2b8;
+}
+ .modal-image {
+     width: 40%;
+     height: 40%;
+}
+ .modal-dialog {
+     max-width: 90%;
+     width: 80%;
+}
+ img {
+     max-width: 100%;
+     max-height: 100%;
+}
+ .square {
+     height: 200px;
+     width: 250px;
+}
+ .modal .card {
+    border: 0px solid rgba(0, 0, 0, 0.125);
+}
+ .close {
+     font-size: 2.35rem;
+     color: #d43b3b;
+}
+ .modal-header {
+     border-bottom: 0px solid #e9ecef;
+}
+ .bg-dark {
+     background-color: #2b1e1e !important;
+}
+ .navbar-light .navbar-brand {
+     color: rgb(248, 249, 250);
+}
+ .navbar-light .navbar-nav .nav-link {
+     color: rgb(248, 249, 250);
+}
+ .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+     color: rgb(225, 30, 38);
+}
+ .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+     color: rgb(225, 30, 32);
+}
+ .dropdown-item {
+     display: block;
+     width: 100%;
+     padding: 0.25rem 1.5rem;
+     clear: both;
+     font-weight: 400;
+     color: #c81e25;
+     text-align: inherit;
+     white-space: nowrap;
+     background-color: #58292900;
+     border: 0;
+}
+ .dropdown-item:hover, .dropdown-item:focus {
+     color: #ffffff;
+     text-decoration: none;
+     background-color: #e11e26;
+}
+ .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+     color: rgb(225, 30, 38);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 0.9rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.view-product{
+	cursor: zoom-in;
+}
+
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 48px; /* Space for fixed navbar */
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/*
+ * Utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
